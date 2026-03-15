@@ -477,7 +477,15 @@ export default function App() {
       <nav className="fixed w-full z-50 bg-white/80 backdrop-blur-xl border-b border-slate-100">
         <div className="max-w-7xl mx-auto px-4 h-20 flex justify-between items-center">
           <div className="flex items-center gap-2 cursor-pointer group" onClick={() => navigateTo('/', 'home')}>
-            <div className="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center text-white font-black shadow-lg shadow-blue-200 group-hover:scale-110 transition-transform">S</div>
+            <div className="flex items-center gap-3">
+              <div className="w-12 h-12 rounded-2xl overflow-hidden">
+                <img
+                  src="https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/generale/carretto.png"
+                  alt="Case Vacanze"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
             <span className="text-xl font-black bg-clip-text text-transparent bg-gradient-to-r from-blue-700 to-blue-500">Case Vacanze</span>
           </div>
           <div className="hidden lg:flex items-center gap-6">
