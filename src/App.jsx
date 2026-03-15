@@ -51,12 +51,17 @@ const DEFAULT_APARTMENTS = {
     icalUrl: 'https://ical.booking.com/v1/export/t/80a80cf7-e3fd-45e4-bdab-d4c96a81ddbd.ics',
     icalAirbnbUrl: 'https://www.airbnb.it/calendar/ical/47075318.ics?t=771805487e804eb9bcf3c47f65311cef',
     images: [
-      'https://images.unsplash.com/photo-1523217582562-09d0def993a6?auto=format&fit=crop&q=80&w=1000',
-      'https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&q=80&w=1000',
-      'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&q=80&w=1000',
-      'https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&q=80&w=1000',
-      'https://images.unsplash.com/photo-1554995207-c18c203602cb?auto=format&fit=crop&q=80&w=1000'
-    ]
+      'https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/loredana/facciata.jpg',
+       'https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/loredana/letto_matrimoniale.jpg',
+      'https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/loredana/cucina_1.jpg',
+      'https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/loredana/cucina_2.jpg',
+       'https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/loredana/divano_letto.jpg',
+      'https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/loredana/soppalco_1.jpg',
+      'https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/loredana/soppalco_2.jpg',
+      'https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/loredana/tv.jpg',
+      'https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/loredana/panoramica.jpg',
+      'https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/loredana/panoramica_pianterreno.jpg',
+        ]
   },
   azzurra: {
     id: 'azzurra',
@@ -83,6 +88,7 @@ const DEFAULT_APARTMENTS = {
       'https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/azzurra/scala.jpg',
       'https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/azzurra/camera_da_letto_luce_gialla.jpg',
       'https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/azzurra/cucina_bottiglia_vino.jpg',
+      'https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/azzurra/volta_azzurra.jpg'
 
       ]
   },
@@ -105,12 +111,15 @@ const DEFAULT_APARTMENTS = {
     icalUrl: 'https://ical.booking.com/v1/export/t/ea2d1083-55f7-4174-bbff-bf1d7f34d804.ics',
     icalAirbnbUrl: 'https://www.airbnb.it/calendar/ical/47073941.ics?t=0cff8c403d954ac28182618cc3edf26c',
     images: [
-      'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&q=80&w=1000',
-      'https://images.unsplash.com/photo-1554995207-c18c203602cb?auto=format&fit=crop&q=80&w=1000',
-      'https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&q=80&w=1000',
-      'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&q=80&w=1000',
-      'https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&q=80&w=1000'
-    ]
+      'https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/trinacria/facciata.jpg',
+      'https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/trinacria/facciata 2.jpg',
+      'https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/trinacria/stanza.jpg',
+      'https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/trinacria/letto_decorazioni_stella.jpg',
+      'https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/trinacria/volta.jpg',
+      'https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/trinacria/cucina.jpg',
+      'https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/trinacria/teste_mobile.jpg',
+      'https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/trinacria/volta_quadri.jpg',
+     ]
   }
 };
 
@@ -118,17 +127,17 @@ const ATTRACTIONS = [
   { 
     title: { it: "Castello Arabo-Normanno", en: "Arab-Norman Castle" },
     desc: { it: "Il simbolo della città, situato proprio sul porto.", en: "The symbol of the city, located right on the harbor." },
-    img: "https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&q=80&w=2000"
+    img: "https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/generale/castello.jpg"
   },
   { 
     title: { it: "Riserva dello Zingaro", en: "Zingaro Nature Reserve" },
     desc: { it: "Sentieri mozzafiato e calette incontaminate a pochi km.", en: "Breathtaking trails and pristine coves just a few km away." },
-    img: "https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&q=80&w=2000"
+    img: "https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/generale/zingaro.jpeg"
   },
   { 
     title: { it: "Marina di Petrolo", en: "Petrolo Beach" },
     desc: { it: "La spiaggia più vicina, a soli 3 minuti a piedi.", en: "The closest beach, just a 3-minute walk away." },
-    img: "https://images.unsplash.com/photo-1559128010-7c1ad6e1b6a5?auto=format&fit=crop&q=80&w=2000"
+    img: "https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/generale/cala_petrolo.jpg"
   }
 ];
 
@@ -495,7 +504,7 @@ export default function App() {
           <div className="animate-in fade-in duration-700">
             <section className="relative h-[85vh] flex items-center justify-center overflow-hidden">
               <div className="absolute inset-0 z-0 scale-105">
-                <img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&q=80&w=2000" className="w-full h-full object-cover brightness-[0.6] blur-[1px]" alt="Sicily" />
+                <img src="https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/generale/golfo_cornice.jpg" className="w-full h-full object-cover brightness-[0.6] blur-[1px]" alt="Sicily" />
               </div>
               <div className="relative z-10 text-center px-4 max-w-4xl">
                 <h1 className="text-6xl md:text-8xl font-black text-white mb-8 leading-[0.9] drop-shadow-2xl">{t.hero_title_1} <span className="text-blue-400">{t.hero_title_2}</span> {t.hero_title_3}</h1>
@@ -701,7 +710,7 @@ export default function App() {
                 </ul>
               </div>
               <div className="h-[600px] rounded-[5rem] overflow-hidden shadow-2xl relative">
-                <img src="https://images.unsplash.com/photo-1559128010-7c1ad6e1b6a5?auto=format&fit=crop&q=80&w=2000" className="w-full h-full object-cover" alt="Spiaggia" />
+                <img src="https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/generale/porto_notte.jpg" className="w-full h-full object-cover" alt="Spiaggia" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
               </div>
             </div>
@@ -713,12 +722,12 @@ export default function App() {
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                 {[
-                  { title: "Scopello", text: t.explore_nearby_1, img: "https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&q=80&w=2000" },
-                  { title: "Zingaro", text: t.explore_nearby_2, img: "https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&q=80&w=2000" },
-                  { title: "Guidaloca", text: t.explore_nearby_3, img: "https://images.unsplash.com/photo-1559128010-7c1ad6e1b6a5?auto=format&fit=crop&q=80&w=2000" },
-                  { title: "Segesta", text: t.explore_nearby_4, img: "https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&q=80&w=2000" },
-                  { title: "Terme", text: t.explore_nearby_5, img: "https://images.unsplash.com/photo-1523217582562-09d0def993a6?auto=format&fit=crop&q=80&w=2000" },
-                  { title: "Barca", text: t.explore_nearby_6, img: "https://images.unsplash.com/photo-1559128010-7c1ad6e1b6a5?auto=format&fit=crop&q=80&w=2000" }
+                  { title: "Scopello", text: t.explore_nearby_1, img: "https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/generale/tonnara.jpg" },
+                  { title: "Zingaro", text: t.explore_nearby_2, img: "https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/generale/zingaro.jpg" },
+                  { title: "Guidaloca", text: t.explore_nearby_3, img: "https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/generale/guidaloca.jpg"},
+                  { title: "Segesta", text: t.explore_nearby_4, img: "https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/generale/arch_segesta.jpg" },
+                  { title: "Terme", text: t.explore_nearby_5, img: "https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/generale/terme_libere.jpg" },
+                  { title: "Barca", text: t.explore_nearby_6, img: "https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/generale/porto.jpg" }
                 ].map((item, idx) => (
                   <div key={idx} className="bg-white rounded-[4rem] overflow-hidden shadow-xl border border-slate-50 group hover:-translate-y-2 transition-all">
                     <div className="h-64 overflow-hidden"><img src={item.img} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt={item.title} /></div>
