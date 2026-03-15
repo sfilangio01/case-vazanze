@@ -78,7 +78,7 @@ const DEFAULT_APARTMENTS = {
     icalAirbnbUrl: 'https://www.airbnb.it/calendar/ical/46897090.ics?t=af0f3de371a34c5a84b8a849114eadb7',
     images: [
       'https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/azzurra/facciata.jpg',
-      'https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/azzurra/volta_scala.jpg'
+      'https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/azzurra/volta_scala.jpg',
       'https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/azzurra/orologio_parete.jpg',
       'https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/azzurra/scala.jpg',
       'https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/azzurra/camera_da_letto_luce_gialla.jpg',
