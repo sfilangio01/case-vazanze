@@ -78,7 +78,7 @@ const DEFAULT_APARTMENTS = {
     floor: '1st',
     hasWashingMachine: false,
     amenities: COMMON_AMENITIES,
-    airbnbUrl: 'https://www.airbnb.com',
+    airbnbUrl: 'https://www.airbnb.it/h/casevacanzeazzurra',
     icalUrl: 'https://ical.booking.com/v1/export/t/8bd561bc-8c05-46f1-b85e-bde8654625f9.ics',
     icalAirbnbUrl: 'https://www.airbnb.it/calendar/ical/46897090.ics?t=af0f3de371a34c5a84b8a849114eadb7',
     images: [
