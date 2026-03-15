@@ -723,7 +723,7 @@ export default function App() {
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                 {[
                   { title: "Scopello", text: t.explore_nearby_1, img: "https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/generale/tonnara.jpg" },
-                  { title: "Zingaro", text: t.explore_nearby_2, img: "https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/generale/zingaro.jpg" },
+                  { title: "Zingaro", text: t.explore_nearby_2, img: "https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/generale/zingaro.jpeg" },
                   { title: "Guidaloca", text: t.explore_nearby_3, img: "https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/generale/guidaloca.jpg"},
                   { title: "Segesta", text: t.explore_nearby_4, img: "https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/generale/arch_segesta.jpg" },
                   { title: "Terme", text: t.explore_nearby_5, img: "https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/generale/terme_libere.jpg" },
