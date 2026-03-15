@@ -107,7 +107,7 @@ const DEFAULT_APARTMENTS = {
     floor: 'ground',
     hasWashingMachine: false,
     amenities: COMMON_AMENITIES,
-    airbnbUrl: 'https://www.airbnb.com',
+    airbnbUrl: 'https://www.airbnb.it/h/casatrinacria',
     icalUrl: 'https://ical.booking.com/v1/export/t/ea2d1083-55f7-4174-bbff-bf1d7f34d804.ics',
     icalAirbnbUrl: 'https://www.airbnb.it/calendar/ical/47073941.ics?t=0cff8c403d954ac28182618cc3edf26c',
     images: [
