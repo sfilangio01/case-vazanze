@@ -504,7 +504,7 @@ export default function App() {
           <div className="animate-in fade-in duration-700">
             <section className="relative h-[85vh] flex items-center justify-center overflow-hidden">
               <div className="absolute inset-0 z-0 scale-105">
-                <img src="https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/generale/golfo_cornice.jpg" className="w-full h-full object-cover brightness-[0.6] blur-[1px]" alt="Sicily" />
+                <img src="https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/generale/porto.jpg" className="w-full h-full object-cover brightness-[0.6] blur-[1px]" alt="Sicily" />
               </div>
               <div className="relative z-10 text-center px-4 max-w-4xl">
                 <h1 className="text-6xl md:text-8xl font-black text-white mb-8 leading-[0.9] drop-shadow-2xl">{t.hero_title_1} <span className="text-blue-400">{t.hero_title_2}</span> {t.hero_title_3}</h1>
@@ -710,7 +710,7 @@ export default function App() {
                 </ul>
               </div>
               <div className="h-[600px] rounded-[5rem] overflow-hidden shadow-2xl relative">
-                <img src="https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/generale/porto_notte.jpg" className="w-full h-full object-cover" alt="Spiaggia" />
+                <img src="https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/generale/porto.jpg" className="w-full h-full object-cover" alt="Spiaggia" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
               </div>
             </div>
