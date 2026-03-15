@@ -77,11 +77,13 @@ const DEFAULT_APARTMENTS = {
     icalUrl: 'https://ical.booking.com/v1/export/t/8bd561bc-8c05-46f1-b85e-bde8654625f9.ics',
     icalAirbnbUrl: 'https://www.airbnb.it/calendar/ical/46897090.ics?t=af0f3de371a34c5a84b8a849114eadb7',
     images: [
-      'https://sktwkdtpbca20qpw.private.blob.vercel-storage.com/azzurra/facciata.jpg',
-      'https://sktwkdtpbca20qpw.private.blob.vercel-storage.com/azzurra/scala.jpg',
-      'https://sktwkdtpbca20qpw.private.blob.vercel-storage.com/azzurra/cucina_bottiglia_vino.jpg',
-      'https://sktwkdtpbca20qpw.private.blob.vercel-storage.com/azzurra/camera_da_letto_luce_gialla.jpg',
-      'https://sktwkdtpbca20qpw.private.blob.vercel-storage.com/azzurra/orologio_parete.jpg'
+      'https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/azzurra/facciata.jpg',
+      'https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/azzurra/volta_scala.jpg'
+      'https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/azzurra/orologio_parete.jpg',
+      'https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/azzurra/scala.jpg',
+      'https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/azzurra/camera_da_letto_luce_gialla.jpg',
+      'https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/azzurra/cucina_bottiglia_vino.jpg',
+
       ]
   },
   trinacria: {
