@@ -816,8 +816,17 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-20 mb-20">
             <div className="space-y-8">
-              <div className="flex items-center gap-3"><div className="w-12 h-12 bg-blue-600 rounded-2xl flex items-center justify-center text-white font-black">S</div><span className="text-3xl font-black tracking-tighter">Case Vacanze</span></div>
-              <p className="text-slate-400 font-medium text-lg leading-relaxed">Tre case vacanza adiacenti nel cuore di Castellammare del Golfo. Comfort moderno e ospitalità siciliana per un massimo di 13 ospiti.</p>
+            <div className="flex items-center gap-3">
+              <div className="w-12 h-12 rounded-2xl overflow-hidden">
+                <img
+                  src="https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/generale/carretto.png"
+                  alt="Case Vacanze"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <span className="text-3xl font-black tracking-tighter">Case Vacanze</span>
+            </div>  
+            <p className="text-slate-400 font-medium text-lg leading-relaxed">Tre case vacanza adiacenti nel cuore di Castellammare del Golfo. Comfort moderno e ospitalità siciliana per un massimo di 13 ospiti.</p>
             </div>
             <div className="space-y-8">
                <h4 className="text-2xl font-black text-slate-900 tracking-tight">{t.contact_title}</h4>
