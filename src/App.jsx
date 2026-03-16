@@ -51,16 +51,19 @@ const DEFAULT_APARTMENTS = {
     icalUrl: 'https://ical.booking.com/v1/export/t/80a80cf7-e3fd-45e4-bdab-d4c96a81ddbd.ics',
     icalAirbnbUrl: 'https://www.airbnb.it/calendar/ical/47075318.ics?t=771805487e804eb9bcf3c47f65311cef',
     images: [
-      'https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/loredana/soppalco_1.jpg',
-      'https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/loredana/facciata.jpg',
-       'https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/loredana/letto_matrimoniale.jpg',
-      'https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/loredana/cucina_1.jpg',
-      'https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/loredana/cucina_2.jpg',
-       'https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/loredana/divano_letto.jpg',
-      'https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/loredana/soppalco_2.jpg',
-      'https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/loredana/tv.jpg',
-      'https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/loredana/panoramica.jpg',
-      'https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/loredana/panoramica_pianterreno.jpg',
+      'https://cdn.jsdelivr.net/gh/sfilangio01/case-vacanze-assets/loredana/panoramica_2.jpeg',
+      'https://cdn.jsdelivr.net/gh/sfilangio01/case-vacanze-assets/loredana/facciata.jpg',
+      'https://cdn.jsdelivr.net/gh/sfilangio01/case-vacanze-assets/loredana/info.jpeg',
+       'https://cdn.jsdelivr.net/gh/sfilangio01/case-vacanze-assets/loredana/letto_matrimoniale.jpg',
+       'https://cdn.jsdelivr.net/gh/sfilangio01/case-vacanze-assets/loredana/soppalco_1.jpg',
+      'https://cdn.jsdelivr.net/gh/sfilangio01/case-vacanze-assets/loredana/cucina_1.jpg',
+      'https://cdn.jsdelivr.net/gh/sfilangio01/case-vacanze-assets/loredana/cucina_2.jpg',
+      'https://cdn.jsdelivr.net/gh/sfilangio01/case-vacanze-assets/loredana/cactus.jpeg',
+       'https://cdn.jsdelivr.net/gh/sfilangio01/case-vacanze-assets/loredana/divano_letto.jpg',
+      'https://cdn.jsdelivr.net/gh/sfilangio01/case-vacanze-assets/loredana/soppalco_2.jpg',
+      'https://cdn.jsdelivr.net/gh/sfilangio01/case-vacanze-assets/loredana/tv.jpg',
+      'https://cdn.jsdelivr.net/gh/sfilangio01/case-vacanze-assets/loredana/panoramica.jpg',
+      'https://cdn.jsdelivr.net/gh/sfilangio01/case-vacanze-assets/loredana/panoramica_pianterreno.jpg',
         ]
   },
   azzurra: {
@@ -82,13 +85,17 @@ const DEFAULT_APARTMENTS = {
     icalUrl: 'https://ical.booking.com/v1/export/t/8bd561bc-8c05-46f1-b85e-bde8654625f9.ics',
     icalAirbnbUrl: 'https://www.airbnb.it/calendar/ical/46897090.ics?t=af0f3de371a34c5a84b8a849114eadb7',
     images: [
-      'https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/azzurra/volta_scala.jpg',
-      'https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/azzurra/facciata.jpg',
-      'https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/azzurra/orologio_parete.jpg',
-      'https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/azzurra/scala.jpg',
-      'https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/azzurra/camera_da_letto_luce_gialla.jpg',
-      'https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/azzurra/cucina_bottiglia_vino.jpg',
-      'https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/azzurra/volta_azzurra.jpg'
+      'https://cdn.jsdelivr.net/gh/sfilangio01/case-vacanze-assets/azzurra/camera_da_letto_luce_gialla.jpg',
+      'https://cdn.jsdelivr.net/gh/sfilangio01/case-vacanze-assets/azzurra/volta_scala.jpg',
+      'https://cdn.jsdelivr.net/gh/sfilangio01/case-vacanze-assets/azzurra/facciata.jpg',
+      'https://cdn.jsdelivr.net/gh/sfilangio01/case-vacanze-assets/azzurra/info.jpeg',
+      'https://cdn.jsdelivr.net/gh/sfilangio01/case-vacanze-assets/azzurra/orologio_parete.jpg',
+      'https://cdn.jsdelivr.net/gh/sfilangio01/case-vacanze-assets/azzurra/stanza_finestra.jpeg',
+      'https://cdn.jsdelivr.net/gh/sfilangio01/case-vacanze-assets/azzurra/scala.jpg',
+      'https://cdn.jsdelivr.net/gh/sfilangio01/case-vacanze-assets/azzurra/camera.jpeg',
+      'https://cdn.jsdelivr.net/gh/sfilangio01/case-vacanze-assets/azzurra/stanza_tv.jpeg',
+      'https://cdn.jsdelivr.net/gh/sfilangio01/case-vacanze-assets/azzurra/cucina_bottiglia_vino.jpg',
+      'https://cdn.jsdelivr.net/gh/sfilangio01/case-vacanze-assets/azzurra/volta_azzurra.jpg'
 
       ]
   },
@@ -111,14 +118,17 @@ const DEFAULT_APARTMENTS = {
     icalUrl: 'https://ical.booking.com/v1/export/t/ea2d1083-55f7-4174-bbff-bf1d7f34d804.ics',
     icalAirbnbUrl: 'https://www.airbnb.it/calendar/ical/47073941.ics?t=0cff8c403d954ac28182618cc3edf26c',
     images: [
-       'https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/trinacria/letto_decorazioni_stella.jpg',
-      'https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/trinacria/facciata.jpg',
-      'https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/trinacria/facciata 2.jpg',
-      'https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/trinacria/stanza.jpg',
-      'https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/trinacria/volta.jpg',
-      'https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/trinacria/cucina.jpg',
-      'https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/trinacria/teste_mobile.jpg',
-      'https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/trinacria/volta_quadri.jpg',
+       'https://cdn.jsdelivr.net/gh/sfilangio01/case-vacanze-assets/trinacria/letto_decorazioni_stella.jpg',
+      'https://cdn.jsdelivr.net/gh/sfilangio01/case-vacanze-assets/trinacria/facciata.jpg',
+      'https://cdn.jsdelivr.net/gh/sfilangio01/case-vacanze-assets/trinacria/info.jpeg',
+      'https://cdn.jsdelivr.net/gh/sfilangio01/case-vacanze-assets/trinacria/letto.jpeg',
+      'https://cdn.jsdelivr.net/gh/sfilangio01/case-vacanze-assets/trinacria/vaso.jpeg',
+      'https://cdn.jsdelivr.net/gh/sfilangio01/case-vacanze-assets/trinacria/facciata 2.jpg',
+      'https://cdn.jsdelivr.net/gh/sfilangio01/case-vacanze-assets/trinacria/stanza.jpg',
+      'https://cdn.jsdelivr.net/gh/sfilangio01/case-vacanze-assets/trinacria/volta.jpg',
+      'https://cdn.jsdelivr.net/gh/sfilangio01/case-vacanze-assets/trinacria/cucina_2.jpg',
+      'https://cdn.jsdelivr.net/gh/sfilangio01/case-vacanze-assets/trinacria/teste_mobile.jpg',
+      'https://cdn.jsdelivr.net/gh/sfilangio01/case-vacanze-assets/trinacria/volta_quadri.jpg',
      ]
   }
 };
@@ -127,17 +137,17 @@ const ATTRACTIONS = [
   { 
     title: { it: "Castello Arabo-Normanno", en: "Arab-Norman Castle" },
     desc: { it: "Il simbolo della città, situato proprio sul porto.", en: "The symbol of the city, located right on the harbor." },
-    img: "https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/generale/castello.jpg"
+    img: "https://cdn.jsdelivr.net/gh/sfilangio01/case-vacanze-assets/generale/castello.jpg"
   },
   { 
     title: { it: "Riserva dello Zingaro", en: "Zingaro Nature Reserve" },
     desc: { it: "Sentieri mozzafiato e calette incontaminate a pochi km.", en: "Breathtaking trails and pristine coves just a few km away." },
-    img: "https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/generale/zingaro.jpeg"
+    img: "https://cdn.jsdelivr.net/gh/sfilangio01/case-vacanze-assets/generale/zingaro.jpeg"
   },
   { 
     title: { it: "Marina di Petrolo", en: "Petrolo Beach" },
     desc: { it: "La spiaggia più vicina, a soli 3 minuti a piedi.", en: "The closest beach, just a 3-minute walk away." },
-    img: "https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/generale/cala_petrolo.jpg"
+    img: "https://cdn.jsdelivr.net/gh/sfilangio01/case-vacanze-assets/generale/cala_petrolo.jpg"
   }
 ];
 
@@ -154,7 +164,8 @@ const TRANSLATIONS = {
     reviews_title: "What Our Guests Say", guests: "Guests", beds: "Beds", floor: "Floor", price_night: "per night", price_from: "starting from",
     back_home: "Back Home", amenities_title: "Services & Amenities", btn_inquiry: "Send Request", btn_airbnb: "View on Airbnb",
     contact_title: "Contact Us", contact_sub: "Book your Sicilian getaway today.",
-    form_apt: "Select Apartment", form_name: "Full Name", form_checkin: "Check-in Date", form_msg: "Message", form_submit: "Send Message",
+    form_apt: "Select Apartment", form_name: "Full Name", form_phone: "Phone Number", form_checkin: "Check-in Date", form_msg: "Message", form_submit: "Send Message",
+    form_sending: "Sending...", form_error: "An error occurred. Please try again.",
     explore_title: "Castellammare del Golfo", explore_sub: "Discover the beauty of Sicily",
     what_to_see: "What to see", map_title: "Where we are",
     ground_floor: "Ground Floor", first_floor: "1st Floor", balcony: "Balcony", washing_machine: "Washing Machine",
@@ -197,7 +208,8 @@ const TRANSLATIONS = {
     reviews_title: "Cosa Dicono i Nostri Ospiti", guests: "Ospiti", beds: "Letti", floor: "Piano", price_night: "a notte", price_from: "a partire da",
     back_home: "Torna alla Home", amenities_title: "Servizi e Comfort", btn_inquiry: "Invia Richiesta", btn_airbnb: "Vedi su Airbnb",
     contact_title: "Contattaci", contact_sub: "Prenota oggi la tua vacanza in Sicilia.",
-    form_apt: "Seleziona Appartamento", form_name: "Nome Completo", form_checkin: "Data Check-in", form_msg: "Messaggio", form_submit: "Invia Messaggio",
+    form_apt: "Seleziona Appartamento", form_name: "Nome Completo", form_phone: "Numero di Telefono", form_checkin: "Data Check-in", form_msg: "Messaggio", form_submit: "Invia Messaggio",
+    form_sending: "Invio in corso...", form_error: "Si è verificato un errore. Riprova.",
     explore_title: "Castellammare del Golfo", explore_sub: "Scopri la bellezza della Sicilia",
     what_to_see: "Cosa Vedere", map_title: "Dove Siamo",
     ground_floor: "Piano Terra", first_floor: "1° Piano", balcony: "Balcone", washing_machine: "Lavatrice",
@@ -220,7 +232,7 @@ const TRANSLATIONS = {
     explore_nearby_3: "Baia di Guidaloca (10 min), una splendida spiaggia di ciottoli bianchi",
     explore_nearby_4: "Area archeologica di Segesta (25 min) con il celebre teatro greco panoramico",
     explore_nearby_5: "Terme libere di Segesta, dove rilassarsi nelle sorgenti naturali calde",
-    explore_nearby_6: "Dal porto partono anche escursioni in barca lungo la costa verso Scopello e la Riserva dello Zingaro, tra grotte e acque cristalline.",
+    explore_nearby_6: "Dal porto partono anche escursioni in barca lungo la costa verso Scopello e la Riserva dello Zingaro, tra grosse e acque cristalline.",
     explore_why_title: "Perché scegliere questa casa",
     explore_why_1: "posizione centrale ma tranquilla",
     explore_why_2: "mare raggiungibile a piedi",
@@ -366,7 +378,7 @@ const BoxGallery = ({ images, t }) => {
               ><ChevronLeft className="w-8 h-8" /></button>
               <button 
                 onClick={() => setSelectedIdx(prev => prev === images.length - 1 ? 0 : prev + 1)}
-                className="absolute right-4 md:right-12 p-5 bg-white/80 backdrop-blur-xl rounded-full shadow-2xl hover:bg-white transition-all"
+                className="absolute right-4 md:left-12 p-5 bg-white/80 backdrop-blur-xl rounded-full shadow-2xl hover:bg-white transition-all"
               ><ChevronRight className="w-8 h-8" /></button>
            </div>
            <div className="h-24 bg-white border-t border-slate-100 flex items-center justify-center gap-3 overflow-x-auto px-4">
@@ -394,6 +406,7 @@ export default function App() {
   const [availability, setAvailability] = useState({ loredana: [], azzurra: [], trinacria: [] });
   const [inquiryStatus, setInquiryStatus] = useState(null);
   const [syncing, setSyncing] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const t = TRANSLATIONS[lang];
 
@@ -401,6 +414,7 @@ export default function App() {
     window.history.pushState({}, '', path);
     setView(viewName);
     setSelectedApartment(apt);
+    setMobileMenuOpen(false);
     window.scrollTo(0, 0);
   };
 
@@ -466,21 +480,43 @@ export default function App() {
     syncAll();
   }, []);
 
-  const submitInquiry = (e) => {
+  const submitInquiry = async (e) => {
     e.preventDefault();
-    setInquiryStatus('success');
-    e.target.reset();
+    setInquiryStatus('sending');
+
+    const formData = new FormData(e.target);
+    const data = Object.fromEntries(formData.entries());
+
+    try {
+      const response = await fetch("https://formspree.io/f/xqeyypnq", {
+        method: "POST",
+        body: JSON.stringify(data),
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json'
+        }
+      });
+
+      if (response.ok) {
+        setInquiryStatus('success');
+        e.target.reset();
+      } else {
+        setInquiryStatus('error');
+      }
+    } catch (error) {
+      setInquiryStatus('error');
+    }
   };
 
   return (
     <div className="font-sans text-slate-900 bg-white min-h-screen selection:bg-blue-100">
-      <nav className="fixed w-full z-50 bg-white/80 backdrop-blur-xl border-b border-slate-100">
+      <nav className="fixed w-full z-[60] bg-white/80 backdrop-blur-xl border-b border-slate-100">
         <div className="max-w-7xl mx-auto px-4 h-20 flex justify-between items-center">
           <div className="flex items-center gap-2 cursor-pointer group" onClick={() => navigateTo('/', 'home')}>
             <div className="flex items-center gap-3">
               <div className="w-12 h-12 rounded-2xl overflow-hidden">
                 <img
-                  src="https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/generale/carretto.png"
+                  src="https://cdn.jsdelivr.net/gh/sfilangio01/case-vacanze-assets/generale/carretto.png"
                   alt="Case Vacanze"
                   className="w-full h-full object-cover"
                 />
@@ -503,16 +539,36 @@ export default function App() {
           <div className="flex items-center gap-4">
             {syncing && <RefreshCw className="w-4 h-4 text-blue-500 animate-spin" />}
             <button onClick={() => setLang(lang === 'it' ? 'en' : 'it')} className="flex items-center gap-2 px-3 py-1.5 bg-slate-50 hover:bg-slate-100 rounded-full transition-all text-sm font-bold text-slate-700 border border-slate-200"><Globe className="w-4 h-4 text-blue-600" /> {lang === 'it' ? '🇮🇹 IT' : '🇬🇧 EN'}</button>
+            <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className="lg:hidden p-2 bg-slate-50 rounded-xl text-slate-600 hover:bg-slate-100 transition-colors">
+              {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            </button>
           </div>
         </div>
       </nav>
+
+      {mobileMenuOpen && (
+        <div className="fixed inset-0 z-[55] bg-white pt-24 animate-in slide-in-from-right duration-300 lg:hidden overflow-y-auto">
+          <div className="flex flex-col p-6 gap-2">
+            <button onClick={() => navigateTo('/', 'home')} className="flex items-center justify-between p-6 bg-slate-50 rounded-[2rem] font-black text-2xl text-slate-800">{t.nav_home} <ChevronRight /></button>
+            <button onClick={() => navigateTo('/apartments', 'apartments')} className="flex items-center justify-between p-6 bg-slate-50 rounded-[2rem] font-black text-2xl text-slate-800">{t.nav_apartments} <ChevronRight /></button>
+            <div className="grid grid-cols-1 gap-2 mt-4">
+              <button onClick={() => navigateTo('/loredana', 'detail', DEFAULT_APARTMENTS.loredana)} className="p-5 bg-blue-50/50 rounded-2xl font-bold text-slate-700 text-left">Loredana</button>
+              <button onClick={() => navigateTo('/azzurra', 'detail', DEFAULT_APARTMENTS.azzurra)} className="p-5 bg-blue-50/50 rounded-2xl font-bold text-slate-700 text-left">Azzurra</button>
+              <button onClick={() => navigateTo('/trinacria', 'detail', DEFAULT_APARTMENTS.trinacria)} className="p-5 bg-blue-50/50 rounded-2xl font-bold text-slate-700 text-left">Trinacria</button>
+            </div>
+            <button onClick={() => navigateTo('/calendar', 'calendar')} className="flex items-center justify-between p-6 bg-slate-50 rounded-[2rem] font-black text-2xl text-slate-800 mt-4">{t.nav_calendar} <ChevronRight /></button>
+            <button onClick={() => navigateTo('/explore', 'explore')} className="flex items-center justify-between p-6 bg-slate-50 rounded-[2rem] font-black text-2xl text-slate-800">{t.nav_castellammare} <ChevronRight /></button>
+            <button onClick={() => navigateTo('/contact', 'contact')} className="flex items-center justify-between p-6 bg-blue-600 rounded-[2rem] font-black text-2xl text-white mt-4">{t.nav_contact} <ArrowRight /></button>
+          </div>
+        </div>
+      )}
 
       <main className="pt-20">
         {view === 'home' && (
           <div className="animate-in fade-in duration-700">
             <section className="relative h-[85vh] flex items-center justify-center overflow-hidden">
               <div className="absolute inset-0 z-0 scale-105">
-                <img src="https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/generale/porto.jpg" className="w-full h-full object-cover brightness-[0.6] blur-[1px]" alt="Sicily" />
+                <img src="https://cdn.jsdelivr.net/gh/sfilangio01/case-vacanze-assets/generale/porto.jpg" className="w-full h-full object-cover brightness-[0.6] blur-[1px]" alt="Sicily" />
               </div>
               <div className="relative z-10 text-center px-4 max-w-4xl">
                 <h1 className="text-6xl md:text-8xl font-black text-white mb-8 leading-[0.9] drop-shadow-2xl">{t.hero_title_1} <span className="text-blue-400">{t.hero_title_2}</span> {t.hero_title_3}</h1>
@@ -718,7 +774,7 @@ export default function App() {
                 </ul>
               </div>
               <div className="h-[600px] rounded-[5rem] overflow-hidden shadow-2xl relative">
-                <img src="https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/generale/porto.jpg" className="w-full h-full object-cover" alt="Spiaggia" />
+                <img src="https://cdn.jsdelivr.net/gh/sfilangio01/case-vacanze-assets/generale/porto.jpg" className="w-full h-full object-cover" alt="Spiaggia" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
               </div>
             </div>
@@ -730,12 +786,12 @@ export default function App() {
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                 {[
-                  { title: "Scopello", text: t.explore_nearby_1, img: "https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/generale/tonnara.jpg" },
-                  { title: "Zingaro", text: t.explore_nearby_2, img: "https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/generale/zingaro.jpeg" },
-                  { title: "Guidaloca", text: t.explore_nearby_3, img: "https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/generale/guidaloca.jpg"},
-                  { title: "Segesta", text: t.explore_nearby_4, img: "https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/generale/arch_segesta.jpg" },
-                  { title: "Terme", text: t.explore_nearby_5, img: "https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/generale/terme_libere.jpg" },
-                  { title: "Barca", text: t.explore_nearby_6, img: "https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/generale/porto.jpg" }
+                  { title: "Scopello", text: t.explore_nearby_1, img: "https://cdn.jsdelivr.net/gh/sfilangio01/case-vacanze-assets/generale/tonnara.jpg" },
+                  { title: "Zingaro", text: t.explore_nearby_2, img: "https://cdn.jsdelivr.net/gh/sfilangio01/case-vacanze-assets/generale/zingaro.jpeg" },
+                  { title: "Guidaloca", text: t.explore_nearby_3, img: "https://cdn.jsdelivr.net/gh/sfilangio01/case-vacanze-assets/generale/guidaloca.jpg"},
+                  { title: "Segesta", text: t.explore_nearby_4, img: "https://cdn.jsdelivr.net/gh/sfilangio01/case-vacanze-assets/generale/arch_segesta.jpg" },
+                  { title: "Terme", text: t.explore_nearby_5, img: "https://cdn.jsdelivr.net/gh/sfilangio01/case-vacanze-assets/generale/terme_libere.jpg" },
+                  { title: "Barca", text: t.explore_nearby_6, img: "https://cdn.jsdelivr.net/gh/sfilangio01/case-vacanze-assets/generale/porto.jpg" }
                 ].map((item, idx) => (
                   <div key={idx} className="bg-white rounded-[4rem] overflow-hidden shadow-xl border border-slate-50 group hover:-translate-y-2 transition-all">
                     <div className="h-64 overflow-hidden"><img src={item.img} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt={item.title} /></div>
@@ -800,18 +856,58 @@ export default function App() {
             </div>
             <div className="bg-white p-16 rounded-[5rem] shadow-2xl border border-slate-50 text-left">
                <form onSubmit={submitInquiry} className="space-y-10">
-                  {inquiryStatus === 'success' ? (<div className="p-12 bg-green-50 text-green-700 rounded-[3rem] font-black text-center text-3xl animate-bounce">{lang === 'it' ? 'Richiesta Inviata con Successo!' : 'Request Sent Successfully!'}</div>) : (
+                  {inquiryStatus === 'success' ? (
+                    <div className="p-12 bg-green-50 text-green-700 rounded-[3rem] font-black text-center text-3xl animate-bounce">
+                      {lang === 'it' ? 'Richiesta Inviata con Successo!' : 'Request Sent Successfully!'}
+                    </div>
+                  ) : (
                     <>
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-                        <div className="space-y-3"><label className="text-xs font-black uppercase text-slate-400 tracking-[0.2em] ml-2">{t.form_name}</label><input required name="name" className="w-full p-6 bg-slate-50 rounded-3xl outline-none focus:ring-4 focus:ring-blue-100 transition-all font-bold text-lg" placeholder="Mario Rossi" /></div>
-                        <div className="space-y-3"><label className="text-xs font-black uppercase text-slate-400 tracking-[0.2em] ml-2">{t.form_apt}</label><select name="apartment" className="w-full p-6 bg-slate-50 rounded-3xl outline-none focus:ring-4 focus:ring-blue-100 transition-all font-bold text-lg appearance-none">{APARTMENT_KEYS.map(k => <option key={k} value={k}>{apartments[k]?.name || DEFAULT_APARTMENTS[k].name}</option>)}</select></div>
+                        <div className="space-y-3">
+                          <label className="text-xs font-black uppercase text-slate-400 tracking-[0.2em] ml-2">{t.form_name}</label>
+                          <input required name="name" className="w-full p-6 bg-slate-50 rounded-3xl outline-none focus:ring-4 focus:ring-blue-100 transition-all font-bold text-lg" placeholder="Mario Rossi" />
+                        </div>
+                        <div className="space-y-3">
+                          <label className="text-xs font-black uppercase text-slate-400 tracking-[0.2em] ml-2">Email</label>
+                          <input required name="email" type="email" className="w-full p-6 bg-slate-50 rounded-3xl outline-none focus:ring-4 focus:ring-blue-100 transition-all font-bold text-lg" placeholder="email@esempio.com" />
+                        </div>
                       </div>
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-                        <div className="space-y-3"><label className="text-xs font-black uppercase text-slate-400 tracking-[0.2em] ml-2">{t.form_checkin}</label><input required name="dates" type="date" className="w-full p-6 bg-slate-50 rounded-3xl outline-none focus:ring-4 focus:ring-blue-100 transition-all font-bold text-lg" /></div>
-                        <div className="space-y-3"><label className="text-xs font-black uppercase text-slate-400 tracking-[0.2em] ml-2">{t.guests}</label><input required name="guests" type="number" min="1" max="13" className="w-full p-6 bg-slate-50 rounded-3xl outline-none focus:ring-4 focus:ring-blue-100 transition-all font-bold text-lg" placeholder="2" /></div>
+                        <div className="space-y-3">
+                          <label className="text-xs font-black uppercase text-slate-400 tracking-[0.2em] ml-2">{t.form_apt}</label>
+                          <select name="apartment" className="w-full p-6 bg-slate-50 rounded-3xl outline-none focus:ring-4 focus:ring-blue-100 transition-all font-bold text-lg appearance-none">
+                            {APARTMENT_KEYS.map(k => <option key={k} value={k}>{apartments[k]?.name || DEFAULT_APARTMENTS[k].name}</option>)}
+                          </select>
+                        </div>
+                        <div className="space-y-3">
+                          <label className="text-xs font-black uppercase text-slate-400 tracking-[0.2em] ml-2">{t.form_checkin}</label>
+                          <input required name="dates" type="date" className="w-full p-6 bg-slate-50 rounded-3xl outline-none focus:ring-4 focus:ring-blue-100 transition-all font-bold text-lg" />
+                        </div>
                       </div>
-                      <div className="space-y-3"><label className="text-xs font-black uppercase text-slate-400 tracking-[0.2em] ml-2">{t.form_msg}</label><textarea name="message" rows="5" className="w-full p-6 bg-slate-50 rounded-3xl outline-none focus:ring-4 focus:ring-blue-100 transition-all font-bold text-lg" placeholder="Hai domande o richieste particolari?"></textarea></div>
-                      <button type="submit" className="w-full py-7 bg-blue-600 text-white rounded-[2.5rem] font-black text-2xl shadow-2xl shadow-blue-500/30 hover:bg-blue-700 transition-all active:scale-95">{t.form_submit}</button>
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+                        <div className="space-y-3">
+                          <label className="text-xs font-black uppercase text-slate-400 tracking-[0.2em] ml-2">{t.guests}</label>
+                          <input required name="guests" type="number" min="1" max="13" className="w-full p-6 bg-slate-50 rounded-3xl outline-none focus:ring-4 focus:ring-blue-100 transition-all font-bold text-lg" placeholder="2" />
+                        </div>
+                        <div className="space-y-3">
+                          <label className="text-xs font-black uppercase text-slate-400 tracking-[0.2em] ml-2">{t.form_phone}</label>
+                          <input required name="phone" type="tel" className="w-full p-6 bg-slate-50 rounded-3xl outline-none focus:ring-4 focus:ring-blue-100 transition-all font-bold text-lg" placeholder="+39 3XX XXXXXXX" />
+                        </div>
+                      </div>
+                      <div className="space-y-3">
+                        <label className="text-xs font-black uppercase text-slate-400 tracking-[0.2em] ml-2">{t.form_msg}</label>
+                        <textarea name="message" rows="5" className="w-full p-6 bg-slate-50 rounded-3xl outline-none focus:ring-4 focus:ring-blue-100 transition-all font-bold text-lg" placeholder="Hai domande o richieste particolari?"></textarea>
+                      </div>
+                      <div className="h-4">
+                         {inquiryStatus === 'error' && <p className="text-red-500 font-bold ml-2">{t.form_error}</p>}
+                      </div>
+                      <button 
+                        type="submit" 
+                        disabled={inquiryStatus === 'sending'}
+                        className={`w-full py-7 bg-blue-600 text-white rounded-[2.5rem] font-black text-2xl shadow-2xl shadow-blue-500/30 hover:bg-blue-700 transition-all active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed`}
+                      >
+                        {inquiryStatus === 'sending' ? t.form_sending : t.form_submit}
+                      </button>
                     </>
                   )}
                </form>
@@ -827,7 +923,7 @@ export default function App() {
             <div className="flex items-center gap-3">
               <div className="w-12 h-12 rounded-2xl overflow-hidden">
                 <img
-                  src="https://0nvrzdpg2dlrgopd.public.blob.vercel-storage.com/generale/carretto.png"
+                  src="https://cdn.jsdelivr.net/gh/sfilangio01/case-vacanze-assets/generale/carretto.png"
                   alt="Case Vacanze"
                   className="w-full h-full object-cover"
                 />
@@ -839,9 +935,9 @@ export default function App() {
             <div className="space-y-8">
                <h4 className="text-2xl font-black text-slate-900 tracking-tight">{t.contact_title}</h4>
                <div className="space-y-6">
-                  <div className="flex flex-col"><span className="text-xs font-black text-slate-400 uppercase tracking-widest mb-1">Vincenzo 🇮🇹 🇬🇧 🇵🇹</span><a href="tel:+393899196861" className="flex items-center gap-2 text-xl font-bold text-slate-700 hover:text-blue-600 transition"><Phone className="w-5 h-5" /> +393899196861</a><a href="https://wa.me/393899196861" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-lg font-bold text-green-600"><MessageCircle className="w-5 h-5" /> WhatsApp</a></div>
-                  <div className="flex flex-col"><span className="text-xs font-black text-slate-400 uppercase tracking-widest mb-1">Loredana 🇮🇹</span><a href="tel:+393381605034" className="flex items-center gap-2 text-xl font-bold text-slate-700 hover:text-blue-600 transition"><Phone className="w-5 h-5" /> +393381605034</a><a href="https://wa.me/3381605034" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-lg font-bold text-green-600"><MessageCircle className="w-5 h-5" /> WhatsApp</a></div>
-                  <div className="flex flex-col"><span className="text-xs font-black text-slate-400 uppercase tracking-widest mb-1">Email</span><a href="mailto:loredans73a@gmail.com" className="flex items-center gap-2 text-xl font-bold text-slate-700 hover:text-blue-600 transition"><Mail className="w-5 h-5" /> loredans73a@gmail.com</a></div>
+                  <div className="flex flex-col"><span className="text-xs font-black text-slate-400 uppercase tracking-widest mb-1">Vincenzo 🇮🇹 🇬🇧 🇵🇹</span><a href="tel:+393899196861" className="flex items-center gap-2 text-xl font-bold text-slate-700 hover:text-blue-600 transition"><Phone className="w-5 f-5" /> +393899196861</a><a href="https://wa.me/393899196861" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-lg font-bold text-green-600"><MessageCircle className="w-5 h-5" /> WhatsApp</a></div>
+                  <div className="flex flex-col"><span className="text-xs font-black text-slate-400 uppercase tracking-widest mb-1">Loredana 🇮🇹</span><a href="tel:+393381605034" className="flex items-center gap-2 text-xl font-bold text-slate-700 hover:text-blue-600 transition"><Phone className="w-5 f-5" /> +393381605034</a><a href="https://wa.me/3381605034" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-lg font-bold text-green-600"><MessageCircle className="w-5 h-5" /> WhatsApp</a></div>
+                  <div className="flex flex-col"><span className="text-xs font-black text-slate-400 uppercase tracking-widest mb-1">Email</span><a href="mailto:loredans73a@gmail.com" className="flex items-center gap-2 text-xl font-bold text-slate-700 hover:text-blue-600 transition"><Mail className="w-5 f-5" /> loredans73a@gmail.com</a></div>
                </div>
             </div>
             <div className="flex flex-col gap-6 text-slate-400 font-black text-xl items-start md:items-end">
@@ -852,21 +948,21 @@ export default function App() {
             </div>
           </div>
           <div className="pt-12 border-t border-slate-50 flex flex-col md:flex-row justify-between items-center text-slate-400 font-bold text-sm gap-6">
-            <div class="flex flex-col items-center md:items-start gap-2">
-              <p class="text-sm text-slate-500">
+            <div className="flex flex-col items-center md:items-start gap-2">
+              <p className="text-sm text-slate-500">
                 © 2026 Case Vacanze Castellammare del Golfo. All rights reserved.
               </p>
               
-              <div class="flex items-center gap-2 text-xs text-slate-400 font-medium">
+              <div className="flex items-center gap-2 text-xs text-slate-400 font-medium">
                 <span>Powered by</span>
                 <a 
                   href="https://vfwebsolutions.com" 
                   target="_blank" 
                   rel="noopener noreferrer" 
-                  class="flex items-center gap-1.5 hover:text-blue-600 transition-all duration-300 group"
+                  className="flex items-center gap-1.5 hover:text-blue-600 transition-all duration-300 group"
                 >
-                  <span class="hover:underline underline-offset-4">vfwebsolutions</span>
-                   <span class="text-base group-hover:scale-110 transition-transform">👨‍💻</span>
+                  <span className="hover:underline underline-offset-4">vfwebsolutions</span>
+                   <span className="text-base group-hover:scale-110 transition-transform">👨‍💻</span>
                 </a>
               </div>
             </div>
