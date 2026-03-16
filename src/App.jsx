@@ -64,7 +64,7 @@ const DEFAULT_APARTMENTS = {
       'https://cdn.jsdelivr.net/gh/sfilangio01/case-vacanze-assets/loredana/tv.jpg',
       'https://cdn.jsdelivr.net/gh/sfilangio01/case-vacanze-assets/loredana/panoramica.jpg',
       'https://cdn.jsdelivr.net/gh/sfilangio01/case-vacanze-assets/loredana/panoramica_pianterreno.jpg',
-        ]
+         ]
   },
   azzurra: {
     id: 'azzurra',
@@ -96,7 +96,6 @@ const DEFAULT_APARTMENTS = {
       'https://cdn.jsdelivr.net/gh/sfilangio01/case-vacanze-assets/azzurra/stanza_tv.jpeg',
       'https://cdn.jsdelivr.net/gh/sfilangio01/case-vacanze-assets/azzurra/cucina_bottiglia_vino.jpg',
       'https://cdn.jsdelivr.net/gh/sfilangio01/case-vacanze-assets/azzurra/volta_azzurra.jpg'
-
       ]
   },
   trinacria: {
@@ -132,24 +131,6 @@ const DEFAULT_APARTMENTS = {
      ]
   }
 };
-
-const ATTRACTIONS = [
-  { 
-    title: { it: "Castello Arabo-Normanno", en: "Arab-Norman Castle" },
-    desc: { it: "Il simbolo della città, situato proprio sul porto.", en: "The symbol of the city, located right on the harbor." },
-    img: "https://cdn.jsdelivr.net/gh/sfilangio01/case-vacanze-assets/generale/castello.jpg"
-  },
-  { 
-    title: { it: "Riserva dello Zingaro", en: "Zingaro Nature Reserve" },
-    desc: { it: "Sentieri mozzafiato e calette incontaminate a pochi km.", en: "Breathtaking trails and pristine coves just a few km away." },
-    img: "https://cdn.jsdelivr.net/gh/sfilangio01/case-vacanze-assets/generale/zingaro.jpeg"
-  },
-  { 
-    title: { it: "Marina di Petrolo", en: "Petrolo Beach" },
-    desc: { it: "La spiaggia più vicina, a soli 3 minuti a piedi.", en: "The closest beach, just a 3-minute walk away." },
-    img: "https://cdn.jsdelivr.net/gh/sfilangio01/case-vacanze-assets/generale/cala_petrolo.jpg"
-  }
-];
 
 const TRANSLATIONS = {
   en: {
@@ -361,33 +342,46 @@ const BoxGallery = ({ images, t }) => {
 
       {showFullGallery && (
         <div className="fixed inset-0 z-[100] bg-white flex flex-col animate-in fade-in duration-300">
-           <div className="h-20 flex items-center justify-between px-8 border-b border-slate-100">
-              <button onClick={() => setShowFullGallery(false)} className="p-3 bg-slate-50 rounded-full hover:bg-slate-100 transition-colors"><ChevronLeft className="w-6 h-6" /></button>
+           <div className="h-20 flex items-center justify-between px-8 border-b border-slate-100 bg-white">
+              <button onClick={() => setShowFullGallery(false)} className="p-3 bg-slate-50 rounded-full hover:bg-slate-100 transition-colors">
+                <ChevronLeft className="w-6 h-6" />
+              </button>
               <p className="font-black text-slate-400 uppercase tracking-widest text-xs">{selectedIdx + 1} / {images.length}</p>
               <div className="w-12 h-12" />
            </div>
+           
            <div className="flex-1 relative flex items-center justify-center p-4 md:p-12 overflow-hidden bg-slate-50">
               <img 
+                key={selectedIdx}
                 src={images[selectedIdx]} 
                 className="max-h-full max-w-full object-contain rounded-3xl shadow-2xl animate-in zoom-in-95 duration-500" 
                 alt="Full View" 
               />
+              
+              {/* Bottone Indietro */}
               <button 
                 onClick={() => setSelectedIdx(prev => prev === 0 ? images.length - 1 : prev - 1)}
-                className="absolute left-4 md:left-12 p-5 bg-white/80 backdrop-blur-xl rounded-full shadow-2xl hover:bg-white transition-all"
-              ><ChevronLeft className="w-8 h-8" /></button>
+                className="absolute left-4 md:left-12 p-5 bg-white/90 backdrop-blur-xl rounded-full shadow-2xl hover:bg-white transition-all z-10"
+              >
+                <ChevronLeft className="w-8 h-8" />
+              </button>
+              
+              {/* Bottone Avanti - CORRETTO md:right-12 */}
               <button 
                 onClick={() => setSelectedIdx(prev => prev === images.length - 1 ? 0 : prev + 1)}
-                className="absolute right-4 md:left-12 p-5 bg-white/80 backdrop-blur-xl rounded-full shadow-2xl hover:bg-white transition-all"
-              ><ChevronRight className="w-8 h-8" /></button>
+                className="absolute right-4 md:right-12 p-5 bg-white/90 backdrop-blur-xl rounded-full shadow-2xl hover:bg-white transition-all z-10"
+              >
+                <ChevronRight className="w-8 h-8" />
+              </button>
            </div>
-           <div className="h-24 bg-white border-t border-slate-100 flex items-center justify-center gap-3 overflow-x-auto px-4">
+           
+           <div className="h-24 bg-white border-t border-slate-100 flex items-center justify-start md:justify-center gap-3 overflow-x-auto px-4 scrollbar-hide">
               {images.map((img, idx) => (
                 <img 
                   key={idx} 
                   src={img} 
                   onClick={() => setSelectedIdx(idx)}
-                  className={`h-14 w-20 object-cover rounded-xl cursor-pointer transition-all ${selectedIdx === idx ? 'ring-4 ring-blue-600 scale-110 shadow-lg' : 'opacity-50 hover:opacity-100'}`} 
+                  className={`h-14 w-20 flex-shrink-0 object-cover rounded-xl cursor-pointer transition-all ${selectedIdx === idx ? 'ring-4 ring-blue-600 scale-110 shadow-lg' : 'opacity-50 hover:opacity-100'}`} 
                   alt="Thumb" 
                 />
               ))}
@@ -411,7 +405,7 @@ export default function App() {
   const t = TRANSLATIONS[lang];
 
   const navigateTo = (path, viewName, apt = null) => {
-    window.history.pushState({}, '', path);
+    // Removed window.history.pushState as it is restricted in the execution environment
     setView(viewName);
     setSelectedApartment(apt);
     setMobileMenuOpen(false);
@@ -419,27 +413,8 @@ export default function App() {
   };
 
   useEffect(() => {
-    const handleLocationChange = () => {
-      const path = window.location.pathname.replace('/', '').toLowerCase();
-      if (APARTMENT_KEYS.includes(path)) {
-        setSelectedApartment(DEFAULT_APARTMENTS[path]);
-        setView('detail');
-      } else if (path === 'apartments') {
-        setView('apartments');
-      } else if (path === 'calendar') {
-        setView('calendar');
-      } else if (path === 'explore') {
-        setView('explore');
-      } else if (path === 'contact') {
-        setView('contact');
-      } else {
-        setView('home');
-      }
-    };
-
-    handleLocationChange();
-    window.addEventListener('popstate', handleLocationChange);
-    return () => window.removeEventListener('popstate', handleLocationChange);
+    // Removed popstate and manual path checking as they rely on History API
+    // The app starts at 'home' by default.
   }, []);
 
   useEffect(() => {
@@ -824,11 +799,11 @@ export default function App() {
             </div>
 
             <div className="mt-32 h-[600px] rounded-[5rem] overflow-hidden shadow-2xl border-8 border-white bg-slate-50 relative group">
-               <iframe title="explore-map-final" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.1784917637856!2d12.880993!3d38.016335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13196238b93933c1%3A0x2f8b809a7b74400a!2sVia%20Giovanni%20Bovio%2C%2021%2C%2091014%20Castellammare%20del%20Golfo%20TP!5e0!3m2!1sit!2sit!4v1700000000000!5m2!1sit!2sit" width="100%" height="100%" style={{border:0}} loading="lazy"></iframe>
-               <div className="absolute top-10 left-10 bg-white/90 backdrop-blur-md p-6 rounded-3xl shadow-xl border border-slate-100 hidden md:block group-hover:translate-x-2 transition-transform">
-                  <h4 className="font-black text-slate-900 text-lg mb-1 flex items-center gap-2"><MapPin className="text-red-500" /> {t.map_title}</h4>
-                  <p className="text-slate-500 font-bold">Via Giovanni Bovio, 21</p>
-               </div>
+                <iframe title="explore-map-final" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.1784917637856!2d12.880993!3d38.016335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13196238b93933c1%3A0x2f8b809a7b74400a!2sVia%20Giovanni%20Bovio%2C%2021%2C%2091014%20Castellammare%20del%20Golfo%20TP!5e0!3m2!1sit!2sit!4v1700000000000!5m2!1sit!2sit" width="100%" height="100%" style={{border:0}} loading="lazy"></iframe>
+                <div className="absolute top-10 left-10 bg-white/90 backdrop-blur-md p-6 rounded-3xl shadow-xl border border-slate-100 hidden md:block group-hover:translate-x-2 transition-transform">
+                   <h4 className="font-black text-slate-900 text-lg mb-1 flex items-center gap-2"><MapPin className="text-red-500" /> {t.map_title}</h4>
+                   <p className="text-slate-500 font-bold">Via Giovanni Bovio, 21</p>
+                </div>
             </div>
           </div>
         )}
@@ -931,6 +906,11 @@ export default function App() {
               <span className="text-3xl font-black tracking-tighter">Case Vacanze</span>
             </div>  
             <p className="text-slate-400 font-medium text-lg leading-relaxed">Tre case vacanza adiacenti nel cuore di Castellammare del Golfo. Comfort moderno e ospitalità siciliana per un massimo di 13 ospiti.</p>
+            <div className="pt-4 space-y-1">
+              <p className="text-[10px] font-black text-slate-400 uppercase tracking-[0.2em]">Codici Identificativi</p>
+              <p className="text-xs font-bold text-slate-500">CIN: IT081005C2U5ZVQRM8</p>
+              <p className="text-xs font-bold text-slate-500">CIR: 19081005C211782</p>
+            </div>
             </div>
             <div className="space-y-8">
                <h4 className="text-2xl font-black text-slate-900 tracking-tight">{t.contact_title}</h4>
