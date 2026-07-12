@@ -102,7 +102,7 @@ const TRANSLATIONS = {
     why_us: "Why Choose Us?", pos_title: "Central Location", pos_desc: "We are located at Via Canelli 51, Turin.",
     hosp_title: "Professional Quality", hosp_desc: "Years of experience and top-quality products.",
     comf_title: "Advanced Technology", comf_desc: "Ozone sanitization and specific treatments.",
-    reviews_title: "What Our Customers Say", duration: "Duration", vehicle: "Vehicle", price_from: "starting from",
+    reviews_title: "What Our Customers Say", duration: "Duration", vehicle: "Vehicle", price_from: "Price",
     back_home: "Back Home", amenities_title: "Included in the service", btn_inquiry: "Send Request", btn_airbnb: "Follow on Instagram",
     contact_title: "Contact & Booking", contact_sub: "Book your appointment at Autolavaggio Lingotto.",
     form_apt: "Select Service", form_name: "Full Name", form_phone: "Phone Number", form_checkin: "Preferred Date", form_msg: "Message / Vehicle Info", form_submit: "Send Request",
@@ -141,7 +141,7 @@ const TRANSLATIONS = {
     why_us: "Perché Scegliere Noi?", pos_title: "Posizione Comoda", pos_desc: "Siamo in Via Canelli 51, Torino.",
     hosp_title: "Qualità Professionale", hosp_desc: "Anni di esperienza e prodotti al top.",
     comf_title: "Tecnologia Avanzata", comf_desc: "Sanificazione ad ozono e trattamenti specifici.",
-    reviews_title: "Cosa Dicono i Clienti", duration: "Durata", vehicle: "Veicolo", price_from: "a partire da",
+    reviews_title: "Cosa Dicono i Clienti", duration: "Durata", vehicle: "Veicolo", price_from: "Prezzo",
     back_home: "Torna alla Home", amenities_title: "Incluso nel servizio", btn_inquiry: "Invia Richiesta", btn_airbnb: "Seguici su Instagram",
     contact_title: "Contatti e Prenotazioni", contact_sub: "Prenota il tuo lavaggio all'Autolavaggio Lingotto.",
     form_apt: "Seleziona Servizio", form_name: "Nome Completo", form_phone: "Numero di Telefono", form_checkin: "Data Preferita", form_msg: "Messaggio / Modello Auto", form_submit: "Invia Richiesta",
@@ -428,7 +428,7 @@ export default function App() {
                         <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent"></div>
                         <div className="absolute bottom-10 left-10 text-white text-left pr-4">
                           <h3 className="text-3xl font-black mb-2">{srv.name}</h3>
-                          <p className="text-blue-300 font-bold uppercase text-[10px] tracking-widest">{t.price_from} {srv.price}€</p>
+                          <p className="text-blue-300 font-bold uppercase text-[10px] tracking-widest">{srv.price}€</p>
                           <p className="text-white/80 font-bold text-sm mt-2">{srv.tagline[lang]}</p>
                         </div>
                       </div>
@@ -508,7 +508,7 @@ export default function App() {
 
                   <div className="grid grid-cols-2 gap-6">
                     <div className="p-8 bg-blue-50 rounded-[2.5rem] border border-blue-100 flex flex-col justify-center">
-                      <p className="text-sm font-bold uppercase text-blue-400 tracking-widest mb-1">{t.price_from}</p>
+                      <p className="text-sm font-bold uppercase text-blue-400 tracking-widest mb-1">{lang === 'it' ? 'Prezzo' : 'Price'}</p>
                       <p className="text-4xl font-black text-blue-700">€{selectedService.price}</p>
                     </div>
                     <div className="p-8 bg-slate-50 rounded-[2.5rem] border border-slate-100 flex flex-col justify-center">
