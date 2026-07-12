@@ -26,7 +26,6 @@ const DEFAULT_SERVICES = {
       it: "Il nostro servizio di lavaggio esterno viene effettuato a mano o con impianti automatizzati di ultima generazione per garantire la massima cura della carrozzeria. Include prelavaggio, lavaggio con shampoo specifico, ceratura e asciugatura meticolosa.",
       en: "Our exterior wash service is done by hand or with latest-generation automated systems to ensure maximum care for the bodywork. It includes pre-wash, wash with specific shampoo, waxing, and meticulous drying."
     },
-    price: 15,
     duration: '30 min',
     vehicleType: 'Auto/SUV',
     isPremium: false,
@@ -47,7 +46,6 @@ const DEFAULT_SERVICES = {
       it: "Ridiamo vita agli interni della tua auto. Aspirazione completa di sedili, tappetini e bagagliaio. Pulizia accurata del cruscotto, delle plastiche e di tutte le superfici interne con prodotti igienizzanti e protettivi.",
       en: "We bring your car's interior back to life. Complete vacuuming of seats, floor mats, and trunk. Careful cleaning of the dashboard, plastics, and all interior surfaces with sanitizing and protective products."
     },
-    price: 20,
     duration: '45 min',
     vehicleType: 'Auto/SUV',
     isPremium: false,
@@ -73,7 +71,6 @@ const DEFAULT_SERVICES = {
       it: "Il trattamento definitivo per la tua auto. Combina il lavaggio esterno meticoloso con una pulizia interna profonda, aggiungendo la sanificazione dell'abitacolo con ozono per eliminare batteri, virus e cattivi odori in modo permanente.",
       en: "The ultimate treatment for your car. It combines meticulous exterior washing with deep interior cleaning, adding ozone cabin sanitization to permanently eliminate bacteria, viruses, and bad odors."
     },
-    price: 45,
     duration: '1h 30m',
     vehicleType: 'Auto/SUV',
     isPremium: true,
@@ -102,7 +99,7 @@ const TRANSLATIONS = {
     why_us: "Why Choose Us?", pos_title: "Central Location", pos_desc: "We are located at Via Canelli 51, Turin.",
     hosp_title: "Professional Quality", hosp_desc: "Years of experience and top-quality products.",
     comf_title: "Advanced Technology", comf_desc: "Ozone sanitization and specific treatments.",
-    reviews_title: "What Our Customers Say", duration: "Duration", vehicle: "Vehicle", price_from: "Price",
+    reviews_title: "What Our Customers Say", duration: "Duration", vehicle: "Vehicle",
     back_home: "Back Home", amenities_title: "Included in the service", btn_inquiry: "Send Request", btn_airbnb: "Follow on Instagram",
     contact_title: "Contact & Booking", contact_sub: "Book your appointment at Autolavaggio Lingotto.",
     form_apt: "Select Service", form_name: "Full Name", form_phone: "Phone Number", form_checkin: "Preferred Date", form_msg: "Message / Vehicle Info", form_submit: "Send Request",
@@ -141,7 +138,7 @@ const TRANSLATIONS = {
     why_us: "Perché Scegliere Noi?", pos_title: "Posizione Comoda", pos_desc: "Siamo in Via Canelli 51, Torino.",
     hosp_title: "Qualità Professionale", hosp_desc: "Anni di esperienza e prodotti al top.",
     comf_title: "Tecnologia Avanzata", comf_desc: "Sanificazione ad ozono e trattamenti specifici.",
-    reviews_title: "Cosa Dicono i Clienti", duration: "Durata", vehicle: "Veicolo", price_from: "Prezzo",
+    reviews_title: "Cosa Dicono i Clienti", duration: "Durata", vehicle: "Veicolo",
     back_home: "Torna alla Home", amenities_title: "Incluso nel servizio", btn_inquiry: "Invia Richiesta", btn_airbnb: "Seguici su Instagram",
     contact_title: "Contatti e Prenotazioni", contact_sub: "Prenota il tuo lavaggio all'Autolavaggio Lingotto.",
     form_apt: "Seleziona Servizio", form_name: "Nome Completo", form_phone: "Numero di Telefono", form_checkin: "Data Preferita", form_msg: "Messaggio / Modello Auto", form_submit: "Invia Richiesta",
@@ -173,50 +170,6 @@ const TRANSLATIONS = {
   }
 };
 
-const CustomCalendar = ({ blockedDates, lang, translations }) => {
-  const [currentDate, setCurrentDate] = useState(new Date());
-  const monthNames = {
-    it: ["Gennaio", "Febbraio", "Marzo", "Aprile", "Maggio", "Giugno", "Luglio", "Agosto", "Settembre", "Ottobre", "Novembre", "Dicembre"],
-    en: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
-  };
-  const daysInMonth = (year, month) => new Date(year, month + 1, 0).getDate();
-  const startDay = new Date(currentDate.getFullYear(), currentDate.getMonth(), 1).getDay();
-  const handlePrev = () => setCurrentDate(new Date(currentDate.getFullYear(), currentDate.getMonth() - 1, 1));
-  const handleNext = () => setCurrentDate(new Date(currentDate.getFullYear(), currentDate.getMonth() + 1, 1));
-  
-  const isBlocked = (day) => {
-    const today = new Date();
-    today.setHours(0, 0, 0, 0);
-    const checkDate = new Date(currentDate.getFullYear(), currentDate.getMonth(), day);
-    const dateStr = `${currentDate.getFullYear()}-${String(currentDate.getMonth() + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
-    return checkDate < today || (blockedDates || []).includes(dateStr);
-  };
-
-  return (
-    <div className="bg-white p-6 rounded-[2rem] border border-slate-100 shadow-xl overflow-hidden">
-      <div className="flex justify-between items-center mb-6">
-        <button onClick={handlePrev} className="p-2 hover:bg-slate-50 rounded-full transition-colors"><ChevronLeft className="w-5 h-5" /></button>
-        <h4 className="font-black text-slate-800 text-lg">{monthNames[lang][currentDate.getMonth()]} {currentDate.getFullYear()}</h4>
-        <button onClick={handleNext} className="p-2 hover:bg-slate-50 rounded-full transition-colors"><ChevronRight className="w-5 h-5" /></button>
-      </div>
-      <div className="grid grid-cols-7 gap-1 text-center mb-2">
-        {['D', 'L', 'M', 'M', 'G', 'V', 'S'].map((d, i) => (<div key={`header-${i}`} className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">{d}</div>))}
-      </div>
-      <div className="grid grid-cols-7 gap-1">
-        {[...Array(startDay)].map((_, i) => <div key={`empty-${i}`} className="h-10" />)}
-        {[...Array(daysInMonth(currentDate.getFullYear(), currentDate.getMonth()))].map((_, i) => {
-          const day = i + 1;
-          const blocked = isBlocked(day);
-          return (<div key={`day-${day}`} className={`h-10 flex items-center justify-center rounded-xl text-sm font-bold transition-all relative cursor-pointer ${blocked ? 'bg-red-50 text-red-500' : 'bg-green-50 text-green-600 hover:scale-105'}`}>{day}</div>);
-        })}
-      </div>
-      <div className="mt-6 flex justify-center gap-6 text-[10px] font-bold uppercase tracking-widest text-slate-400">
-        <div className="flex items-center gap-1.5"><div className="w-3 h-3 rounded-full bg-green-500" /> {translations.available}</div>
-        <div className="flex items-center gap-1.5"><div className="w-3 h-3 rounded-full bg-red-500" /> {translations.booked}</div>
-      </div>
-    </div>
-  );
-};
 
 const BoxGallery = ({ images, t }) => {
   const [showFullGallery, setShowFullGallery] = useState(false);
@@ -428,7 +381,6 @@ export default function App() {
                         <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent"></div>
                         <div className="absolute bottom-10 left-10 text-white text-left pr-4">
                           <h3 className="text-3xl font-black mb-2">{srv.name}</h3>
-                          <p className="text-blue-300 font-bold uppercase text-[10px] tracking-widest">{srv.price}€</p>
                           <p className="text-white/80 font-bold text-sm mt-2">{srv.tagline[lang]}</p>
                         </div>
                       </div>
@@ -507,10 +459,6 @@ export default function App() {
                   </div>
 
                   <div className="grid grid-cols-2 gap-6">
-                    <div className="p-8 bg-blue-50 rounded-[2.5rem] border border-blue-100 flex flex-col justify-center">
-                      <p className="text-sm font-bold uppercase text-blue-400 tracking-widest mb-1">{lang === 'it' ? 'Prezzo' : 'Price'}</p>
-                      <p className="text-4xl font-black text-blue-700">€{selectedService.price}</p>
-                    </div>
                     <div className="p-8 bg-slate-50 rounded-[2.5rem] border border-slate-100 flex flex-col justify-center">
                       <p className="text-3xl font-black text-slate-700">{selectedService.duration}</p>
                       <p className="text-sm font-bold uppercase text-slate-400 tracking-widest mt-1">{t.duration}</p>
@@ -548,10 +496,6 @@ export default function App() {
               </div>
 
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 pt-16 border-t border-slate-100">
-                <div className="space-y-6">
-                  <h3 className="text-3xl font-black text-slate-900">{t.nav_calendar}</h3>
-                  <CustomCalendar blockedDates={[]} lang={lang} translations={t} />
-                </div>
                 <div className="flex flex-col justify-center gap-6">
                    <div className="p-10 bg-slate-900 rounded-[4rem] text-white space-y-8 shadow-2xl">
                       <h4 className="text-3xl font-black">{lang === 'it' ? 'Vuoi fissare un appuntamento?' : 'Want to book an appointment?'}</h4>
@@ -690,7 +634,7 @@ export default function App() {
                         </div>
                         <div className="space-y-3">
                           <label className="text-xs font-black uppercase text-slate-400 tracking-[0.2em] ml-2">{t.form_checkin}</label>
-                          <input required name="date" type="date" className="w-full p-6 bg-slate-50 rounded-3xl outline-none focus:ring-4 focus:ring-blue-100 transition-all font-bold text-lg" />
+                          <input required name="date" type="text" className="w-full p-6 bg-slate-50 rounded-3xl outline-none focus:ring-4 focus:ring-blue-100 transition-all font-bold text-lg" />
                         </div>
                       </div>
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
